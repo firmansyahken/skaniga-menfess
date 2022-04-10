@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    font-size: var(--header-size);
+    width: 50%;
+}
+
+.header a {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in .3s;
+}
+
+.header a:hover {
+    background-color: var(--dark-color);
+}
+
+.header img {
+    width: 25px;
+    height: 25px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+    box-sizing: border-box;
+}
+
+.head h1 {
+    font-size: var(--header-size);
+}
+
+.head a {
+    font-size: var(--body-size);
+    color: var(--primary-color);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    padding-bottom: 50px;
+}
+
+.notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 30;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 600px;
+    width: 80%;
+    color: white;
+}
+
+.content h2 {
+    font-size: var(--header-size);
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    line-height: 30px;
+    font-size: var(--body-size);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: var(--body-size);
+}
+
+.footer p:nth-child(1) {
+    text-decoration: underline;
+}
+
+.footer button {
+    background-color: white;
+    border: 2px solid white;
+    outline: none;
+    font-size: var(--body-size);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: ease-in .3s;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        width: 70%;
+    }
+
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

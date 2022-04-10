@@ -1,0 +1,38 @@
+.header {
+    margin-top: 20px;
+}
+
+.header h2 {
+    font-size: var(--heading2-size);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    padding: 50px 0;
+}
+
+.loadmore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.loadmore button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: var(--body-size);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

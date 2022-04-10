@@ -1,0 +1,148 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.brand img {
+    width: 70px;
+}
+
+.brand h2 {
+    font-size: var(--heading2-size);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.link a {
+    font-size: var(--body-size);
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link p {
+    font-size: var(--body-size);
+    cursor: pointer;
+}
+
+
+.navbar_mobile {
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.mobile_container {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile_brand {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.mobile_brand img {
+    width: 50px;
+}
+
+.mobile_brand h2 {
+    font-size: var(--heading2-size);
+}
+
+.toggle img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    background-color: white;
+    width: 92%;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 30px 20px;
+    transition: ease .3s;
+    z-index: 10;
+    opacity: 0.1;
+}
+
+.menu_active {
+    top: 10%;
+    position: fixed;
+    background-color: white;
+    width: 92%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    transition: ease .3s;
+    z-index: 10;
+    display: none;
+    opacity: 1;
+}
+
+.menu_active a {
+    text-decoration: none;
+    font-size: calc(var(--body-size) + 2);
+    color: black;
+    cursor: pointer;
+}
+
+.menu_active p {
+    font-size: calc(var(--body-size) + 2);
+    color: black;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu_active {
+        display: flex;
+    }
+
+    .navbar_mobile {
+        display: block;
+    }
+}

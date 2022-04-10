@@ -1,0 +1,35 @@
+.card:hover .content {
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+.content {
+    background: linear-gradient(104.38deg, #826F66 2.73%, #3A3845 99.12%);
+    border-radius: 15px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.content p {
+    font-size: var(--action-size);
+}
+
+.content h3 {
+    font-size: var(--body-size);
+    padding: 10px 0 30px 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.navigation {
+    margin-left: 5px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--body-size);
+}
